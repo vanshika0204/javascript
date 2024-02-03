@@ -23,4 +23,8 @@ let variable
 console.log(typeof "Vanshika")
 
 console.log(typeof null)
- console.log(typeof undefined)
+console.log(typeof undefined)
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+console.log(id===anotherId);
