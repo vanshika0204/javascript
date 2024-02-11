@@ -34,7 +34,7 @@ buttons.forEach(function (button) {
 
 ```
 
-## project 2 solution
+## project 2 
 ```javascript
 const form = document.querySelector('form')
 //this usecase will give you empty
@@ -59,5 +59,20 @@ form.addEventListener('submit', function(e){
   }
   
 })
+
+```
+
+## project 3
+```javascript
+const clock = document.getElementById('clock')
+
+// let date = new Date()
+// console.log(date.toLocaleString())
+
+setInterval(function(){
+  let date = new Date();
+  // console.log(date.toLocaleString());
+  clock.innerHTML = date.toLocaleTimeString()
+}, 1000)
 
 ```
