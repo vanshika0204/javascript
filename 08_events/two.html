@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Events</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Vanshika")
+    // }, 2000)
+
+    const sayVanshika = function(){
+        console.log("Vanshika")
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "JS series"
+    }
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+    // setTimeout(sayVanshika, 2000)
+</script>
+</html>
